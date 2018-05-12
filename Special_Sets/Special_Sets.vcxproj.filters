@@ -29,5 +29,8 @@
     <ClCompile Include="Special_Sets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2dimensionalvector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
