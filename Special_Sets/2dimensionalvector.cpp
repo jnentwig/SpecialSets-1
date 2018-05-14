@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 
-int **HundredbyHundred(std::vector<std::vector<int>> &A, std::ifstream& stream) {
+void HundredbyHundred(std::vector<std::vector<int>> &A, std::ifstream& stream) {
 	int tmp;
 	for (int i = 0; i < 100; i++) {
 		for (int j = 0; j < 100; j++) {
@@ -11,6 +11,16 @@ int **HundredbyHundred(std::vector<std::vector<int>> &A, std::ifstream& stream) 
 		}
 	}
 }
+std::vector < std::vector<int>> nChoose2(std::vector<int> selectedsigletons) {
+	int n = selectedsigletons.size();
+	std::vector < std::vector<int>> nChoose2;
+	for (int i = 0; i < n; i++) {
+		for (int j = i + 1; j <= n; j++) {
+			nChoose2.pushback({ selectedsigletons[i], selectedsigletons[j] });
+		}
+	}
+}
+
 int main() {
 	using namespace std;
 	ifstream in_stream;
